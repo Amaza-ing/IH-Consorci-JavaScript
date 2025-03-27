@@ -4,8 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./fetch.js"></script>
+    <script defer src="./dom.js"></script>
+    <style>
+      .big {
+        font-size: 1.5rem;
+      }
+
+      .red {
+        color: red;
+      }
+    </style>
   </head>
   <body>
+    <h1 id="main-title">Este es el Título</h1>
+
+    <section>
+      <div id="content"></div>
+    </section>
+
+    <ul class="list red">
+      <li class="list-item">Elemento 1</li>
+      <li class="list-item">Elemento 2</li>
+      <li class="list-item">Elemento 3</li>
+    </ul>
+
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+
+    <a href="https://www.tesla.com" target="_blank">Ir a Tesla</a>
+
+    <br>
+    <button id="btn">Click Me!</button>
+
+    <br>
+
+    <form id="form">
+      <fieldset>
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username">
+      </fieldset>
+
+      <fieldset>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+      </fieldset>
+
+      <button>Enviar</button>
+    </form>
   </body>
 </html>
